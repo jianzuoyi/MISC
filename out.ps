@@ -1,0 +1,5799 @@
+%!PS-Adobe-2.0
+%%Title: out.ps
+%%Creator: gnuplot 5.0 patchlevel 7
+%%CreationDate: Mon Oct 23 15:24:47 2017
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 554 770
+%%Orientation: Landscape
+%%Pages: (atend)
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape true def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -26 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 554 50 lineto 554 770 lineto 50 770 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.1 (Oct 2015)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTB {BL [] LCb DL} def
+/LTw {PL [] 1 setgray} def
+/LTb {PL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (out.ps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.0 patchlevel 7)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Mon Oct 23 15:24:47 2017)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Support for boxed text - Ethan A Merritt May 2005
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { Boxing
+    { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if } def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox 1 1 1 setrgbcolor fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+% redundant definitions for compatibility with prologue.ps older than 5.0.2
+/LTB {BL [] LCb DL} def
+/LTb {PL [] LCb DL} def
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Courier) findfont 80 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 560 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 560 M
+6711 0 R
+stroke
+296 560 M
+[ [(Courier) 80.0 0.0 true true 0 (1)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 560 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 560 M
+6711 0 R
+stroke
+296 560 M
+[ [(Courier) 80.0 0.0 true true 0 (3)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 560 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 560 M
+6711 0 R
+stroke
+296 560 M
+[ [(Courier) 80.0 0.0 true true 0 (5)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 560 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 560 M
+6711 0 R
+stroke
+296 560 M
+[ [(Courier) 80.0 0.0 true true 0 (7)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 561 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 561 M
+6711 0 R
+stroke
+296 561 M
+[ [(Courier) 80.0 0.0 true true 0 (9)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 561 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 561 M
+6711 0 R
+stroke
+296 561 M
+[ [(Courier) 80.0 0.0 true true 0 (11)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 561 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 561 M
+6711 0 R
+stroke
+296 561 M
+[ [(Courier) 80.0 0.0 true true 0 (13)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 561 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 561 M
+6711 0 R
+stroke
+296 561 M
+[ [(Courier) 80.0 0.0 true true 0 (15)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 561 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 561 M
+6711 0 R
+stroke
+296 561 M
+[ [(Courier) 80.0 0.0 true true 0 (17)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 561 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 561 M
+6711 0 R
+stroke
+296 561 M
+[ [(Courier) 80.0 0.0 true true 0 (19)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 561 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 561 M
+6711 0 R
+stroke
+296 561 M
+[ [(Courier) 80.0 0.0 true true 0 (21)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 562 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 562 M
+6711 0 R
+stroke
+296 562 M
+[ [(Courier) 80.0 0.0 true true 0 (23)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 562 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 562 M
+6711 0 R
+stroke
+296 562 M
+[ [(Courier) 80.0 0.0 true true 0 (25)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 562 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 562 M
+6711 0 R
+stroke
+296 562 M
+[ [(Courier) 80.0 0.0 true true 0 (27)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 562 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 562 M
+6711 0 R
+stroke
+296 562 M
+[ [(Courier) 80.0 0.0 true true 0 (29)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 562 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 562 M
+6711 0 R
+stroke
+296 562 M
+[ [(Courier) 80.0 0.0 true true 0 (31)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 562 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 562 M
+6711 0 R
+stroke
+296 562 M
+[ [(Courier) 80.0 0.0 true true 0 (33)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 562 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 562 M
+6711 0 R
+stroke
+296 562 M
+[ [(Courier) 80.0 0.0 true true 0 (35)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 563 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 563 M
+6711 0 R
+stroke
+296 563 M
+[ [(Courier) 80.0 0.0 true true 0 (37)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 563 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 563 M
+6711 0 R
+stroke
+296 563 M
+[ [(Courier) 80.0 0.0 true true 0 (39)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 563 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 563 M
+6711 0 R
+stroke
+296 563 M
+[ [(Courier) 80.0 0.0 true true 0 (41)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 563 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 563 M
+6711 0 R
+stroke
+296 563 M
+[ [(Courier) 80.0 0.0 true true 0 (43)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 563 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 563 M
+6711 0 R
+stroke
+296 563 M
+[ [(Courier) 80.0 0.0 true true 0 (45)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 563 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 563 M
+6711 0 R
+stroke
+296 563 M
+[ [(Courier) 80.0 0.0 true true 0 (47)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 563 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 563 M
+6711 0 R
+stroke
+296 563 M
+[ [(Courier) 80.0 0.0 true true 0 (49)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 564 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 564 M
+6711 0 R
+stroke
+296 564 M
+[ [(Courier) 80.0 0.0 true true 0 (51)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 564 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 564 M
+6711 0 R
+stroke
+296 564 M
+[ [(Courier) 80.0 0.0 true true 0 (53)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 564 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 564 M
+6711 0 R
+stroke
+296 564 M
+[ [(Courier) 80.0 0.0 true true 0 (55)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 564 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 564 M
+6711 0 R
+stroke
+296 564 M
+[ [(Courier) 80.0 0.0 true true 0 (57)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 564 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 564 M
+6711 0 R
+stroke
+296 564 M
+[ [(Courier) 80.0 0.0 true true 0 (59)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 564 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 564 M
+6711 0 R
+stroke
+296 564 M
+[ [(Courier) 80.0 0.0 true true 0 (61)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 565 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 565 M
+6711 0 R
+stroke
+296 565 M
+[ [(Courier) 80.0 0.0 true true 0 (63)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 565 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 565 M
+6711 0 R
+stroke
+296 565 M
+[ [(Courier) 80.0 0.0 true true 0 (65)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 565 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 565 M
+6711 0 R
+stroke
+296 565 M
+[ [(Courier) 80.0 0.0 true true 0 (67)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 565 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 565 M
+6711 0 R
+stroke
+296 565 M
+[ [(Courier) 80.0 0.0 true true 0 (69)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 565 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 565 M
+6711 0 R
+stroke
+296 565 M
+[ [(Courier) 80.0 0.0 true true 0 (71)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 565 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 565 M
+6711 0 R
+stroke
+296 565 M
+[ [(Courier) 80.0 0.0 true true 0 (73)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 565 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 565 M
+6711 0 R
+stroke
+296 565 M
+[ [(Courier) 80.0 0.0 true true 0 (75)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 566 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 566 M
+6711 0 R
+stroke
+296 566 M
+[ [(Courier) 80.0 0.0 true true 0 (77)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 566 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 566 M
+6711 0 R
+stroke
+296 566 M
+[ [(Courier) 80.0 0.0 true true 0 (79)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 566 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 566 M
+6711 0 R
+stroke
+296 566 M
+[ [(Courier) 80.0 0.0 true true 0 (81)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 566 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 566 M
+6711 0 R
+stroke
+296 566 M
+[ [(Courier) 80.0 0.0 true true 0 (83)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 566 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 566 M
+6711 0 R
+stroke
+296 566 M
+[ [(Courier) 80.0 0.0 true true 0 (85)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 566 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 566 M
+6711 0 R
+stroke
+296 566 M
+[ [(Courier) 80.0 0.0 true true 0 (87)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 567 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 567 M
+6711 0 R
+stroke
+296 567 M
+[ [(Courier) 80.0 0.0 true true 0 (89)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 567 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 567 M
+6711 0 R
+stroke
+296 567 M
+[ [(Courier) 80.0 0.0 true true 0 (91)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 567 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 567 M
+6711 0 R
+stroke
+296 567 M
+[ [(Courier) 80.0 0.0 true true 0 (93)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 567 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 567 M
+6711 0 R
+stroke
+296 567 M
+[ [(Courier) 80.0 0.0 true true 0 (95)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 567 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 567 M
+6711 0 R
+stroke
+296 567 M
+[ [(Courier) 80.0 0.0 true true 0 (97)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 567 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 567 M
+6711 0 R
+stroke
+296 567 M
+[ [(Courier) 80.0 0.0 true true 0 (99)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 568 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 568 M
+6711 0 R
+stroke
+296 568 M
+[ [(Courier) 80.0 0.0 true true 0 (101)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 568 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 568 M
+6711 0 R
+stroke
+296 568 M
+[ [(Courier) 80.0 0.0 true true 0 (103)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 568 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 568 M
+6711 0 R
+stroke
+296 568 M
+[ [(Courier) 80.0 0.0 true true 0 (105)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 568 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 568 M
+6711 0 R
+stroke
+296 568 M
+[ [(Courier) 80.0 0.0 true true 0 (107)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 568 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 568 M
+6711 0 R
+stroke
+296 568 M
+[ [(Courier) 80.0 0.0 true true 0 (109)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 568 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 568 M
+6711 0 R
+stroke
+296 568 M
+[ [(Courier) 80.0 0.0 true true 0 (111)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 569 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 569 M
+6711 0 R
+stroke
+296 569 M
+[ [(Courier) 80.0 0.0 true true 0 (113)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 569 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 569 M
+6711 0 R
+stroke
+296 569 M
+[ [(Courier) 80.0 0.0 true true 0 (115)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 569 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 569 M
+6711 0 R
+stroke
+296 569 M
+[ [(Courier) 80.0 0.0 true true 0 (117)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 569 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 569 M
+6711 0 R
+stroke
+296 569 M
+[ [(Courier) 80.0 0.0 true true 0 (119)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 569 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 569 M
+6711 0 R
+stroke
+296 569 M
+[ [(Courier) 80.0 0.0 true true 0 (121)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 570 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 570 M
+6711 0 R
+stroke
+296 570 M
+[ [(Courier) 80.0 0.0 true true 0 (123)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 570 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 570 M
+6711 0 R
+stroke
+296 570 M
+[ [(Courier) 80.0 0.0 true true 0 (125)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 570 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 570 M
+6711 0 R
+stroke
+296 570 M
+[ [(Courier) 80.0 0.0 true true 0 (127)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 570 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 570 M
+6711 0 R
+stroke
+296 570 M
+[ [(Courier) 80.0 0.0 true true 0 (129)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 570 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 570 M
+6711 0 R
+stroke
+296 570 M
+[ [(Courier) 80.0 0.0 true true 0 (131)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 570 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 570 M
+6711 0 R
+stroke
+296 570 M
+[ [(Courier) 80.0 0.0 true true 0 (133)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 571 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 571 M
+6711 0 R
+stroke
+296 571 M
+[ [(Courier) 80.0 0.0 true true 0 (135)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 571 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 571 M
+6711 0 R
+stroke
+296 571 M
+[ [(Courier) 80.0 0.0 true true 0 (137)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 571 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 571 M
+6711 0 R
+stroke
+296 571 M
+[ [(Courier) 80.0 0.0 true true 0 (139)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 571 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 571 M
+6711 0 R
+stroke
+296 571 M
+[ [(Courier) 80.0 0.0 true true 0 (141)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 571 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 571 M
+6711 0 R
+stroke
+296 571 M
+[ [(Courier) 80.0 0.0 true true 0 (143)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 572 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 572 M
+6711 0 R
+stroke
+296 572 M
+[ [(Courier) 80.0 0.0 true true 0 (145)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 572 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 572 M
+6711 0 R
+stroke
+296 572 M
+[ [(Courier) 80.0 0.0 true true 0 (147)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 572 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 572 M
+6711 0 R
+stroke
+296 572 M
+[ [(Courier) 80.0 0.0 true true 0 (149)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 572 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 572 M
+6711 0 R
+stroke
+296 572 M
+[ [(Courier) 80.0 0.0 true true 0 (151)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 572 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 572 M
+6711 0 R
+stroke
+296 572 M
+[ [(Courier) 80.0 0.0 true true 0 (153)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 573 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 573 M
+6711 0 R
+stroke
+296 573 M
+[ [(Courier) 80.0 0.0 true true 0 (155)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 573 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 573 M
+6711 0 R
+stroke
+296 573 M
+[ [(Courier) 80.0 0.0 true true 0 (157)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 573 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 573 M
+6711 0 R
+stroke
+296 573 M
+[ [(Courier) 80.0 0.0 true true 0 (159)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 573 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 573 M
+6711 0 R
+stroke
+296 573 M
+[ [(Courier) 80.0 0.0 true true 0 (161)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 573 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 573 M
+6711 0 R
+stroke
+296 573 M
+[ [(Courier) 80.0 0.0 true true 0 (163)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 574 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 574 M
+6711 0 R
+stroke
+296 574 M
+[ [(Courier) 80.0 0.0 true true 0 (165)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 574 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 574 M
+6711 0 R
+stroke
+296 574 M
+[ [(Courier) 80.0 0.0 true true 0 (167)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 574 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 574 M
+6711 0 R
+stroke
+296 574 M
+[ [(Courier) 80.0 0.0 true true 0 (169)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 574 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 574 M
+6711 0 R
+stroke
+296 574 M
+[ [(Courier) 80.0 0.0 true true 0 (171)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 574 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 574 M
+6711 0 R
+stroke
+296 574 M
+[ [(Courier) 80.0 0.0 true true 0 (173)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 575 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 575 M
+6711 0 R
+stroke
+296 575 M
+[ [(Courier) 80.0 0.0 true true 0 (175)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 575 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 575 M
+6711 0 R
+stroke
+296 575 M
+[ [(Courier) 80.0 0.0 true true 0 (177)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 575 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 575 M
+6711 0 R
+stroke
+296 575 M
+[ [(Courier) 80.0 0.0 true true 0 (179)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 575 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 575 M
+6711 0 R
+stroke
+296 575 M
+[ [(Courier) 80.0 0.0 true true 0 (181)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 575 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 575 M
+6711 0 R
+stroke
+296 575 M
+[ [(Courier) 80.0 0.0 true true 0 (183)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 576 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 576 M
+6711 0 R
+stroke
+296 576 M
+[ [(Courier) 80.0 0.0 true true 0 (185)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 576 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 576 M
+6711 0 R
+stroke
+296 576 M
+[ [(Courier) 80.0 0.0 true true 0 (187)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 576 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 576 M
+6711 0 R
+stroke
+296 576 M
+[ [(Courier) 80.0 0.0 true true 0 (189)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 576 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 576 M
+6711 0 R
+stroke
+296 576 M
+[ [(Courier) 80.0 0.0 true true 0 (191)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 577 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 577 M
+6711 0 R
+stroke
+296 577 M
+[ [(Courier) 80.0 0.0 true true 0 (193)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 577 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 577 M
+6711 0 R
+stroke
+296 577 M
+[ [(Courier) 80.0 0.0 true true 0 (195)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 577 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 577 M
+6711 0 R
+stroke
+296 577 M
+[ [(Courier) 80.0 0.0 true true 0 (197)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 577 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 577 M
+6711 0 R
+stroke
+296 577 M
+[ [(Courier) 80.0 0.0 true true 0 (199)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 577 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 577 M
+6711 0 R
+stroke
+296 577 M
+[ [(Courier) 80.0 0.0 true true 0 (201)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 578 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 578 M
+6711 0 R
+stroke
+296 578 M
+[ [(Courier) 80.0 0.0 true true 0 (203)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 578 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 578 M
+6711 0 R
+stroke
+296 578 M
+[ [(Courier) 80.0 0.0 true true 0 (205)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 578 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 578 M
+6711 0 R
+stroke
+296 578 M
+[ [(Courier) 80.0 0.0 true true 0 (207)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 579 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 579 M
+6711 0 R
+stroke
+296 579 M
+[ [(Courier) 80.0 0.0 true true 0 (209)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 579 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 579 M
+6711 0 R
+stroke
+296 579 M
+[ [(Courier) 80.0 0.0 true true 0 (211)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 579 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 579 M
+6711 0 R
+stroke
+296 579 M
+[ [(Courier) 80.0 0.0 true true 0 (213)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 579 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 579 M
+6711 0 R
+stroke
+296 579 M
+[ [(Courier) 80.0 0.0 true true 0 (215)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 580 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 580 M
+6711 0 R
+stroke
+296 580 M
+[ [(Courier) 80.0 0.0 true true 0 (217)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 580 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 580 M
+6711 0 R
+stroke
+296 580 M
+[ [(Courier) 80.0 0.0 true true 0 (219)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 580 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 580 M
+6711 0 R
+stroke
+296 580 M
+[ [(Courier) 80.0 0.0 true true 0 (221)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 580 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 580 M
+6711 0 R
+stroke
+296 580 M
+[ [(Courier) 80.0 0.0 true true 0 (223)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 581 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 581 M
+6711 0 R
+stroke
+296 581 M
+[ [(Courier) 80.0 0.0 true true 0 (225)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 581 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 581 M
+6711 0 R
+stroke
+296 581 M
+[ [(Courier) 80.0 0.0 true true 0 (227)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 581 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 581 M
+6711 0 R
+stroke
+296 581 M
+[ [(Courier) 80.0 0.0 true true 0 (229)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 582 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 582 M
+6711 0 R
+stroke
+296 582 M
+[ [(Courier) 80.0 0.0 true true 0 (231)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 582 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 582 M
+6711 0 R
+stroke
+296 582 M
+[ [(Courier) 80.0 0.0 true true 0 (233)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 582 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 582 M
+6711 0 R
+stroke
+296 582 M
+[ [(Courier) 80.0 0.0 true true 0 (235)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 582 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 582 M
+6711 0 R
+stroke
+296 582 M
+[ [(Courier) 80.0 0.0 true true 0 (237)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 583 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 583 M
+6711 0 R
+stroke
+296 583 M
+[ [(Courier) 80.0 0.0 true true 0 (239)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 583 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 583 M
+6711 0 R
+stroke
+296 583 M
+[ [(Courier) 80.0 0.0 true true 0 (241)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 583 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 583 M
+6711 0 R
+stroke
+296 583 M
+[ [(Courier) 80.0 0.0 true true 0 (243)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 584 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 584 M
+6711 0 R
+stroke
+296 584 M
+[ [(Courier) 80.0 0.0 true true 0 (245)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 584 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 584 M
+6711 0 R
+stroke
+296 584 M
+[ [(Courier) 80.0 0.0 true true 0 (247)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 584 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 584 M
+6711 0 R
+stroke
+296 584 M
+[ [(Courier) 80.0 0.0 true true 0 (249)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 584 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 584 M
+6711 0 R
+stroke
+296 584 M
+[ [(Courier) 80.0 0.0 true true 0 (251)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 585 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 585 M
+6711 0 R
+stroke
+296 585 M
+[ [(Courier) 80.0 0.0 true true 0 (253)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 585 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 585 M
+6711 0 R
+stroke
+296 585 M
+[ [(Courier) 80.0 0.0 true true 0 (255)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 585 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 585 M
+6711 0 R
+stroke
+296 585 M
+[ [(Courier) 80.0 0.0 true true 0 (257)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 586 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 586 M
+6711 0 R
+stroke
+296 586 M
+[ [(Courier) 80.0 0.0 true true 0 (259)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 586 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 586 M
+6711 0 R
+stroke
+296 586 M
+[ [(Courier) 80.0 0.0 true true 0 (261)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 586 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 586 M
+6711 0 R
+stroke
+296 586 M
+[ [(Courier) 80.0 0.0 true true 0 (263)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 586 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 586 M
+6711 0 R
+stroke
+296 586 M
+[ [(Courier) 80.0 0.0 true true 0 (265)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 587 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 587 M
+6711 0 R
+stroke
+296 587 M
+[ [(Courier) 80.0 0.0 true true 0 (267)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 587 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 587 M
+6711 0 R
+stroke
+296 587 M
+[ [(Courier) 80.0 0.0 true true 0 (269)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 587 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 587 M
+6711 0 R
+stroke
+296 587 M
+[ [(Courier) 80.0 0.0 true true 0 (271)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 588 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 588 M
+6711 0 R
+stroke
+296 588 M
+[ [(Courier) 80.0 0.0 true true 0 (273)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 588 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 588 M
+6711 0 R
+stroke
+296 588 M
+[ [(Courier) 80.0 0.0 true true 0 (275)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 588 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 588 M
+6711 0 R
+stroke
+296 588 M
+[ [(Courier) 80.0 0.0 true true 0 (277)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 588 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 588 M
+6711 0 R
+stroke
+296 588 M
+[ [(Courier) 80.0 0.0 true true 0 (279)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 589 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 589 M
+6711 0 R
+stroke
+296 589 M
+[ [(Courier) 80.0 0.0 true true 0 (281)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 589 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 589 M
+6711 0 R
+stroke
+296 589 M
+[ [(Courier) 80.0 0.0 true true 0 (283)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 589 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 589 M
+6711 0 R
+stroke
+296 589 M
+[ [(Courier) 80.0 0.0 true true 0 (285)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 590 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 590 M
+6711 0 R
+stroke
+296 590 M
+[ [(Courier) 80.0 0.0 true true 0 (287)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 590 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 590 M
+6711 0 R
+stroke
+296 590 M
+[ [(Courier) 80.0 0.0 true true 0 (289)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 590 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 590 M
+6711 0 R
+stroke
+296 590 M
+[ [(Courier) 80.0 0.0 true true 0 (291)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 591 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 591 M
+6711 0 R
+stroke
+296 591 M
+[ [(Courier) 80.0 0.0 true true 0 (293)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 591 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 591 M
+6711 0 R
+stroke
+296 591 M
+[ [(Courier) 80.0 0.0 true true 0 (295)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 591 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 591 M
+6711 0 R
+stroke
+296 591 M
+[ [(Courier) 80.0 0.0 true true 0 (297)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 592 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 592 M
+6711 0 R
+stroke
+296 592 M
+[ [(Courier) 80.0 0.0 true true 0 (299)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 592 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 592 M
+6711 0 R
+stroke
+296 592 M
+[ [(Courier) 80.0 0.0 true true 0 (301)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 592 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 592 M
+6711 0 R
+stroke
+296 592 M
+[ [(Courier) 80.0 0.0 true true 0 (303)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 593 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 593 M
+6711 0 R
+stroke
+296 593 M
+[ [(Courier) 80.0 0.0 true true 0 (305)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 593 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 593 M
+6711 0 R
+stroke
+296 593 M
+[ [(Courier) 80.0 0.0 true true 0 (307)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 593 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 593 M
+6711 0 R
+stroke
+296 593 M
+[ [(Courier) 80.0 0.0 true true 0 (309)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 594 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 594 M
+6711 0 R
+stroke
+296 594 M
+[ [(Courier) 80.0 0.0 true true 0 (311)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 594 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 594 M
+6711 0 R
+stroke
+296 594 M
+[ [(Courier) 80.0 0.0 true true 0 (313)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 595 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 595 M
+6711 0 R
+stroke
+296 595 M
+[ [(Courier) 80.0 0.0 true true 0 (315)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 595 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 595 M
+6711 0 R
+stroke
+296 595 M
+[ [(Courier) 80.0 0.0 true true 0 (317)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 595 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 595 M
+6711 0 R
+stroke
+296 595 M
+[ [(Courier) 80.0 0.0 true true 0 (319)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 596 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 596 M
+6711 0 R
+stroke
+296 596 M
+[ [(Courier) 80.0 0.0 true true 0 (321)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 596 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 596 M
+6711 0 R
+stroke
+296 596 M
+[ [(Courier) 80.0 0.0 true true 0 (323)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 597 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 597 M
+6711 0 R
+stroke
+296 597 M
+[ [(Courier) 80.0 0.0 true true 0 (325)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 597 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 597 M
+6711 0 R
+stroke
+296 597 M
+[ [(Courier) 80.0 0.0 true true 0 (327)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 598 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 598 M
+6711 0 R
+stroke
+296 598 M
+[ [(Courier) 80.0 0.0 true true 0 (329)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 598 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 598 M
+6711 0 R
+stroke
+296 598 M
+[ [(Courier) 80.0 0.0 true true 0 (331)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 598 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 598 M
+6711 0 R
+stroke
+296 598 M
+[ [(Courier) 80.0 0.0 true true 0 (333)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 599 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 599 M
+6711 0 R
+stroke
+296 599 M
+[ [(Courier) 80.0 0.0 true true 0 (335)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 599 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 599 M
+6711 0 R
+stroke
+296 599 M
+[ [(Courier) 80.0 0.0 true true 0 (337)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 600 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 600 M
+6711 0 R
+stroke
+296 600 M
+[ [(Courier) 80.0 0.0 true true 0 (339)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 600 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 600 M
+6711 0 R
+stroke
+296 600 M
+[ [(Courier) 80.0 0.0 true true 0 (341)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 601 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 601 M
+6711 0 R
+stroke
+296 601 M
+[ [(Courier) 80.0 0.0 true true 0 (343)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 601 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 601 M
+6711 0 R
+stroke
+296 601 M
+[ [(Courier) 80.0 0.0 true true 0 (345)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 602 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 602 M
+6711 0 R
+stroke
+296 602 M
+[ [(Courier) 80.0 0.0 true true 0 (347)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 602 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 602 M
+6711 0 R
+stroke
+296 602 M
+[ [(Courier) 80.0 0.0 true true 0 (349)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 603 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 603 M
+6711 0 R
+stroke
+296 603 M
+[ [(Courier) 80.0 0.0 true true 0 (351)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 603 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 603 M
+6711 0 R
+stroke
+296 603 M
+[ [(Courier) 80.0 0.0 true true 0 (353)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 604 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 604 M
+6711 0 R
+stroke
+296 604 M
+[ [(Courier) 80.0 0.0 true true 0 (355)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 605 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 605 M
+6711 0 R
+stroke
+296 605 M
+[ [(Courier) 80.0 0.0 true true 0 (357)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 605 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 605 M
+6711 0 R
+stroke
+296 605 M
+[ [(Courier) 80.0 0.0 true true 0 (359)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 606 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 606 M
+6711 0 R
+stroke
+296 606 M
+[ [(Courier) 80.0 0.0 true true 0 (361)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 607 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 607 M
+6711 0 R
+stroke
+296 607 M
+[ [(Courier) 80.0 0.0 true true 0 (363)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 608 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 608 M
+6711 0 R
+stroke
+296 608 M
+[ [(Courier) 80.0 0.0 true true 0 (365)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 609 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 609 M
+6711 0 R
+stroke
+296 609 M
+[ [(Courier) 80.0 0.0 true true 0 (367)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 610 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 610 M
+6711 0 R
+stroke
+296 610 M
+[ [(Courier) 80.0 0.0 true true 0 (369)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 611 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 611 M
+6711 0 R
+stroke
+296 611 M
+[ [(Courier) 80.0 0.0 true true 0 (371)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 613 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 613 M
+6711 0 R
+stroke
+296 613 M
+[ [(Courier) 80.0 0.0 true true 0 (373)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 614 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 614 M
+6711 0 R
+stroke
+296 614 M
+[ [(Courier) 80.0 0.0 true true 0 (375)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 616 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 616 M
+6711 0 R
+stroke
+296 616 M
+[ [(Courier) 80.0 0.0 true true 0 (377)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 617 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 617 M
+6711 0 R
+stroke
+296 617 M
+[ [(Courier) 80.0 0.0 true true 0 (379)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 619 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 619 M
+6711 0 R
+stroke
+296 619 M
+[ [(Courier) 80.0 0.0 true true 0 (381)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 621 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 621 M
+6711 0 R
+stroke
+296 621 M
+[ [(Courier) 80.0 0.0 true true 0 (383)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 623 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 623 M
+6711 0 R
+stroke
+296 623 M
+[ [(Courier) 80.0 0.0 true true 0 (385)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 625 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 625 M
+6711 0 R
+stroke
+296 625 M
+[ [(Courier) 80.0 0.0 true true 0 (387)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 628 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 628 M
+6711 0 R
+stroke
+296 628 M
+[ [(Courier) 80.0 0.0 true true 0 (389)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 630 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 630 M
+6711 0 R
+stroke
+296 630 M
+[ [(Courier) 80.0 0.0 true true 0 (391)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 633 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 633 M
+6711 0 R
+stroke
+296 633 M
+[ [(Courier) 80.0 0.0 true true 0 (393)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 635 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 635 M
+6711 0 R
+stroke
+296 635 M
+[ [(Courier) 80.0 0.0 true true 0 (395)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 638 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 638 M
+6711 0 R
+stroke
+296 638 M
+[ [(Courier) 80.0 0.0 true true 0 (397)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 642 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 642 M
+6711 0 R
+stroke
+296 642 M
+[ [(Courier) 80.0 0.0 true true 0 (399)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 646 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 646 M
+6711 0 R
+stroke
+296 646 M
+[ [(Courier) 80.0 0.0 true true 0 (401)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 650 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 650 M
+6711 0 R
+stroke
+296 650 M
+[ [(Courier) 80.0 0.0 true true 0 (403)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 655 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 655 M
+6711 0 R
+stroke
+296 655 M
+[ [(Courier) 80.0 0.0 true true 0 (405)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 659 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 659 M
+6711 0 R
+stroke
+296 659 M
+[ [(Courier) 80.0 0.0 true true 0 (407)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 665 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 665 M
+6711 0 R
+stroke
+296 665 M
+[ [(Courier) 80.0 0.0 true true 0 (409)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 671 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 671 M
+6711 0 R
+stroke
+296 671 M
+[ [(Courier) 80.0 0.0 true true 0 (411)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 677 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 677 M
+6711 0 R
+stroke
+296 677 M
+[ [(Courier) 80.0 0.0 true true 0 (413)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 684 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 684 M
+6711 0 R
+stroke
+296 684 M
+[ [(Courier) 80.0 0.0 true true 0 (415)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 693 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 693 M
+6711 0 R
+stroke
+296 693 M
+[ [(Courier) 80.0 0.0 true true 0 (417)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 702 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 702 M
+6711 0 R
+stroke
+296 702 M
+[ [(Courier) 80.0 0.0 true true 0 (419)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 712 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 712 M
+6711 0 R
+stroke
+296 712 M
+[ [(Courier) 80.0 0.0 true true 0 (421)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 722 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 722 M
+6711 0 R
+stroke
+296 722 M
+[ [(Courier) 80.0 0.0 true true 0 (423)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 733 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 733 M
+6711 0 R
+stroke
+296 733 M
+[ [(Courier) 80.0 0.0 true true 0 (425)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 746 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 746 M
+6711 0 R
+stroke
+296 746 M
+[ [(Courier) 80.0 0.0 true true 0 (427)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 759 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 759 M
+6711 0 R
+stroke
+296 759 M
+[ [(Courier) 80.0 0.0 true true 0 (429)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 773 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 773 M
+6711 0 R
+stroke
+296 773 M
+[ [(Courier) 80.0 0.0 true true 0 (431)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 788 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 788 M
+6711 0 R
+stroke
+296 788 M
+[ [(Courier) 80.0 0.0 true true 0 (433)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 807 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 807 M
+6711 0 R
+stroke
+296 807 M
+[ [(Courier) 80.0 0.0 true true 0 (435)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 826 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 826 M
+6711 0 R
+stroke
+296 826 M
+[ [(Courier) 80.0 0.0 true true 0 (437)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 850 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 850 M
+6711 0 R
+stroke
+296 850 M
+[ [(Courier) 80.0 0.0 true true 0 (439)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 875 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 875 M
+6711 0 R
+stroke
+296 875 M
+[ [(Courier) 80.0 0.0 true true 0 (441)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 902 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 902 M
+6711 0 R
+stroke
+296 902 M
+[ [(Courier) 80.0 0.0 true true 0 (443)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 933 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 933 M
+6711 0 R
+stroke
+296 933 M
+[ [(Courier) 80.0 0.0 true true 0 (445)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 968 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 968 M
+6711 0 R
+stroke
+296 968 M
+[ [(Courier) 80.0 0.0 true true 0 (447)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1008 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1008 M
+6711 0 R
+stroke
+296 1008 M
+[ [(Courier) 80.0 0.0 true true 0 (449)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1049 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1049 M
+6711 0 R
+stroke
+296 1049 M
+[ [(Courier) 80.0 0.0 true true 0 (451)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1091 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1091 M
+6711 0 R
+stroke
+296 1091 M
+[ [(Courier) 80.0 0.0 true true 0 (453)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1134 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1134 M
+6711 0 R
+stroke
+296 1134 M
+[ [(Courier) 80.0 0.0 true true 0 (455)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1178 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1178 M
+6711 0 R
+stroke
+296 1178 M
+[ [(Courier) 80.0 0.0 true true 0 (457)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1222 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1222 M
+6711 0 R
+stroke
+296 1222 M
+[ [(Courier) 80.0 0.0 true true 0 (459)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1270 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1270 M
+6711 0 R
+stroke
+296 1270 M
+[ [(Courier) 80.0 0.0 true true 0 (461)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1318 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1318 M
+6711 0 R
+stroke
+296 1318 M
+[ [(Courier) 80.0 0.0 true true 0 (463)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1368 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1368 M
+6711 0 R
+stroke
+296 1368 M
+[ [(Courier) 80.0 0.0 true true 0 (465)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1423 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1423 M
+6711 0 R
+stroke
+296 1423 M
+[ [(Courier) 80.0 0.0 true true 0 (467)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1479 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1479 M
+6711 0 R
+stroke
+296 1479 M
+[ [(Courier) 80.0 0.0 true true 0 (469)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1537 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1537 M
+6711 0 R
+stroke
+296 1537 M
+[ [(Courier) 80.0 0.0 true true 0 (471)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1602 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1602 M
+6711 0 R
+stroke
+296 1602 M
+[ [(Courier) 80.0 0.0 true true 0 (473)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1669 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1669 M
+6711 0 R
+stroke
+296 1669 M
+[ [(Courier) 80.0 0.0 true true 0 (475)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1741 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1741 M
+6711 0 R
+stroke
+296 1741 M
+[ [(Courier) 80.0 0.0 true true 0 (477)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1817 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1817 M
+6711 0 R
+stroke
+296 1817 M
+[ [(Courier) 80.0 0.0 true true 0 (479)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 1899 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 1899 M
+6711 0 R
+stroke
+296 1899 M
+[ [(Courier) 80.0 0.0 true true 0 (481)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 2002 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 2002 M
+6711 0 R
+stroke
+296 2002 M
+[ [(Courier) 80.0 0.0 true true 0 (483)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 2108 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 2108 M
+6711 0 R
+stroke
+296 2108 M
+[ [(Courier) 80.0 0.0 true true 0 (485)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 2216 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 2216 M
+6711 0 R
+stroke
+296 2216 M
+[ [(Courier) 80.0 0.0 true true 0 (487)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 2325 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 2325 M
+6711 0 R
+stroke
+296 2325 M
+[ [(Courier) 80.0 0.0 true true 0 (489)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 2436 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 2436 M
+6711 0 R
+stroke
+296 2436 M
+[ [(Courier) 80.0 0.0 true true 0 (491)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 2555 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 2555 M
+6711 0 R
+stroke
+296 2555 M
+[ [(Courier) 80.0 0.0 true true 0 (493)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 2675 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 2675 M
+6711 0 R
+stroke
+296 2675 M
+[ [(Courier) 80.0 0.0 true true 0 (495)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 2812 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 2812 M
+6711 0 R
+stroke
+296 2812 M
+[ [(Courier) 80.0 0.0 true true 0 (497)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 2973 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 2973 M
+6711 0 R
+stroke
+296 2973 M
+[ [(Courier) 80.0 0.0 true true 0 (499)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 3155 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 3155 M
+6711 0 R
+stroke
+296 3155 M
+[ [(Courier) 80.0 0.0 true true 0 (501)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 3344 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 3344 M
+6711 0 R
+stroke
+296 3344 M
+[ [(Courier) 80.0 0.0 true true 0 (503)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 3548 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 3548 M
+6711 0 R
+stroke
+296 3548 M
+[ [(Courier) 80.0 0.0 true true 0 (505)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 3755 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 3755 M
+6711 0 R
+stroke
+296 3755 M
+[ [(Courier) 80.0 0.0 true true 0 (507)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 3966 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 3966 M
+6711 0 R
+stroke
+296 3966 M
+[ [(Courier) 80.0 0.0 true true 0 (509)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 4184 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 4184 M
+6711 0 R
+stroke
+296 4184 M
+[ [(Courier) 80.0 0.0 true true 0 (511)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 4417 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 4417 M
+6711 0 R
+stroke
+296 4417 M
+[ [(Courier) 80.0 0.0 true true 0 (513)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 4667 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 4667 M
+6711 0 R
+stroke
+296 4667 M
+[ [(Courier) 80.0 0.0 true true 0 (515)]
+] -26.7 MRshow
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 4943 M
+6711 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 4943 M
+6711 0 R
+stroke
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+344 560 M
+0 4383 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+344 560 M
+0 4383 R
+stroke
+344 512 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Courier) 80.0 0.0 true true 0 (CP019114)]
+] -26.7 MRshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+6929 560 M
+0 4383 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+6929 560 M
+0 4383 R
+stroke
+6929 512 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Courier) 80.0 0.0 true true 0 (CP019115)]
+] -26.7 MRshow
+grestore
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+7055 560 M
+0 4383 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+7055 560 M
+0 4383 R
+stroke
+LTb
+LCb setrgbcolor
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+64 2751 M
+currentpoint gsave translate -270 rotate 0 0 moveto
+[ [(Courier) 80.0 0.0 true true 0 (QRY)]
+] -26.7 MCshow
+grestore
+LTb
+LCb setrgbcolor
+3699 56 M
+[ [(Courier) 80.0 0.0 true true 0 (REF)]
+] -26.7 MCshow
+LTb
+% Begin plot #1
+0.500 UP
+2.000 UL
+LTb
+0.58 0.00 0.83 C 1851 722 M
+17 11 V
+4103 2436 M
+178 119 V
+1868 4667 M
+412 276 V
+383 2973 M
+273 182 V
+4000 393 R
+310 207 V
+4655 561 M
+1 0 V
+-828 8 R
+1748 2 R
+1 0 V
+2 0 R
+-9 1 R
+1 0 V
+-3 1 R
+1297 5 R
+-5393 2 R
+0 1 V
+1045 1 R
+-172 0 R
+0 1 V
+-2 0 R
+662 583 M
+0 1 V
+811 1 R
+377 3 R
+-998 0 R
+1 0 V
+3090 1 R
+-1426 0 R
+1 0 V
+4356 1 R
+0 1 V
+-6 1 R
+-1290 0 R
+0 1 V
+-12 0 R
+-2427 0 R
+1 0 V
+2426 1 R
+1 1 V
+9 0 R
+1 0 V
+-8 0 R
+0 1 V
+1296 0 R
+-4522 1 R
+1 1 V
+1 0 R
+1 0 V
+79 3 R
+1 1 V
+-65 0 R
+3211 2 R
+1 1 V
+-3171 2 R
+2 1 V
+1932 2 R
+2 1 V
+-52 0 R
+2 2 V
+2293 1 R
+3 2 V
+-4185 3 R
+3 2 V
+1879 17 R
+5 4 V
+52 8 R
+7 5 V
+-527 10 R
+9 6 V
+519 0 R
+9 6 V
+1449 733 M
+19 13 V
+2962 13 R
+19 14 V
+-2972 0 R
+23 15 V
+2809 0 R
+27 19 V
+2560 826 M
+35 24 V
+1228 875 M
+40 27 V
+4422 66 R
+58 40 V
+-3466 0 R
+61 41 V
+416 269 R
+75 50 V
+4040 55 R
+55 36 V
+755 1537 M
+97 65 V
+4179 0 R
+100 67 V
+3695 1817 M
+123 82 V
+2595 2216 M
+162 109 V
+stroke 2757 2325 M
+78 1019 R
+305 204 V
+155 418 R
+325 218 V
+853 4417 M
+373 250 V
+1851 722 Circle
+1868 733 Circle
+4103 2436 Circle
+4281 2555 Circle
+1868 4667 Circle
+2280 4943 Circle
+383 2973 Circle
+656 3155 Circle
+4656 3548 Circle
+4966 3755 Circle
+4655 561 Circle
+4656 561 Circle
+3828 569 Circle
+3828 569 Circle
+5576 571 Circle
+5577 571 Circle
+5579 571 Circle
+5579 571 Circle
+5570 572 Circle
+5571 572 Circle
+5568 573 Circle
+5568 573 Circle
+6865 578 Circle
+6865 578 Circle
+1472 580 Circle
+1472 581 Circle
+2517 582 Circle
+2517 582 Circle
+2345 582 Circle
+2345 583 Circle
+2343 583 Circle
+2343 583 Circle
+662 583 Circle
+662 584 Circle
+1473 585 Circle
+1473 585 Circle
+1850 588 Circle
+1850 588 Circle
+852 588 Circle
+853 588 Circle
+3943 589 Circle
+3943 589 Circle
+2517 589 Circle
+2518 589 Circle
+6874 590 Circle
+6874 591 Circle
+6868 592 Circle
+6868 592 Circle
+5578 592 Circle
+5578 593 Circle
+5566 593 Circle
+5566 593 Circle
+3139 593 Circle
+3140 593 Circle
+5566 594 Circle
+5567 595 Circle
+5576 595 Circle
+5577 595 Circle
+5569 595 Circle
+5569 596 Circle
+6865 596 Circle
+6865 596 Circle
+2343 597 Circle
+2344 598 Circle
+2345 598 Circle
+2346 598 Circle
+2425 601 Circle
+2426 602 Circle
+2361 602 Circle
+2361 602 Circle
+5572 604 Circle
+5573 605 Circle
+2402 607 Circle
+2404 608 Circle
+4336 610 Circle
+4338 611 Circle
+4286 611 Circle
+4288 613 Circle
+6581 614 Circle
+6584 616 Circle
+2399 619 Circle
+2402 621 Circle
+4281 638 Circle
+4286 642 Circle
+4338 650 Circle
+4345 655 Circle
+3818 665 Circle
+3827 671 Circle
+4346 671 Circle
+4355 677 Circle
+1449 733 Circle
+1468 746 Circle
+4430 759 Circle
+4449 773 Circle
+1477 773 Circle
+1500 788 Circle
+4309 788 Circle
+4336 807 Circle
+2560 826 Circle
+2595 850 Circle
+1228 875 Circle
+1268 902 Circle
+5690 968 Circle
+5748 1008 Circle
+2282 1008 Circle
+2343 1049 Circle
+2759 1318 Circle
+2834 1368 Circle
+6874 1423 Circle
+6929 1459 Circle
+755 1537 Circle
+852 1602 Circle
+5031 1602 Circle
+5131 1669 Circle
+3695 1817 Circle
+3818 1899 Circle
+2595 2216 Circle
+2757 2325 Circle
+2835 3344 Circle
+3140 3548 Circle
+3295 3966 Circle
+3620 4184 Circle
+853 4417 Circle
+1226 4667 Circle
+% End plot #1
+% Begin plot #2
+0.500 UP
+2.000 UL
+LTb
+0.34 0.71 0.91 C 2510 650 M
+7 -4 V
+-113 38 R
+11 -7 V
+1502 4417 M
+347 -233 V
+5852 2436 M
+165 -111 V
+3944 2108 M
+158 -106 V
+6583 3344 M
+282 -189 V
+5577 569 M
+-921 3 R
+1 0 V
+913 1 R
+510 4 R
+1 0 V
+-511 1 R
+0 -1 V
+8 1 R
+-8 1 R
+1 -1 V
+0 2 R
+455 0 R
+1 0 V
+843 1 R
+1 0 V
+-1300 0 R
+1 0 V
+1297 5 R
+0 -1 V
+-4465 1 R
+-1136 0 R
+1 0 V
+4808 2 R
+-2259 1 R
+0 -1 V
+-1309 2 R
+1 -1 V
+-1042 2 R
+1 0 V
+5 1 R
+1121 2 R
+0 -1 V
+2355 562 M
+-878 35 R
+0 -1 V
+4101 1 R
+1 0 V
+-1636 1 R
+1 0 V
+1621 1 R
+1 -1 V
+-65 2 R
+1 -1 V
+373 601 M
+1 -1 V
+3907 1 R
+1 0 V
+63 2 R
+1 -1 V
+1221 3 R
+1 0 V
+-3225 4 R
+2 -1 V
+23 2 R
+2 -1 V
+48 5 R
+3 -1 V
+97 6 R
+2 -2 V
+-14 6 R
+3 -2 V
+1796 7 R
+4 -3 V
+738 630 M
+3 -2 V
+5837 5 R
+4 -3 V
+-2294 5 R
+4 -2 V
+2355 646 M
+6 -4 V
+0 17 R
+7 -4 V
+-23 10 R
+8 -6 V
+73 34 R
+13 -9 V
+1853 18 R
+13 -9 V
+741 712 M
+15 -10 V
+5076 57 R
+20 -13 V
+2370 826 M
+30 -19 V
+121 68 R
+37 -25 V
+3468 83 R
+45 -31 V
+-623 66 R
+53 -35 V
+-533 158 R
+63 -42 V
+stroke 5031 1049 M
+471 85 R
+63 -43 V
+665 1178 M
+65 -44 V
+1709 88 R
+66 -44 V
+1851 92 R
+72 -48 V
+-806 96 R
+72 -48 V
+2056 153 R
+81 -55 V
+658 169 R
+87 -58 V
+-994 262 R
+108 -72 V
+3829 1817 M
+114 -76 V
+-803 261 R
+153 -103 V
+3027 317 R
+162 -108 V
+1268 2675 M
+179 -120 V
+3004 257 R
+205 -137 V
+1425 298 R
+239 -161 V
+5133 3966 M
+223 -150 V
+2 0 R
+90 -61 V
+6071 561 M
+0 -1 V
+2510 650 Circle
+2517 646 Circle
+2404 684 Circle
+2415 677 Circle
+1502 4417 Circle
+1849 4184 Circle
+5852 2436 Circle
+6017 2325 Circle
+3944 2108 Circle
+4102 2002 Circle
+6583 3344 Circle
+6865 3155 Circle
+5577 569 Circle
+5577 569 Circle
+4656 572 Circle
+4657 572 Circle
+5570 573 Circle
+5570 573 Circle
+6080 577 Circle
+6081 577 Circle
+5570 578 Circle
+5570 577 Circle
+5578 578 Circle
+5578 578 Circle
+5570 579 Circle
+5571 578 Circle
+5571 580 Circle
+5571 580 Circle
+6026 580 Circle
+6027 580 Circle
+6870 581 Circle
+6871 581 Circle
+5571 581 Circle
+5572 581 Circle
+6869 586 Circle
+6869 585 Circle
+2404 586 Circle
+2404 586 Circle
+1268 586 Circle
+1269 586 Circle
+6077 588 Circle
+6077 588 Circle
+3818 589 Circle
+3818 588 Circle
+2509 590 Circle
+2510 589 Circle
+1468 591 Circle
+1469 591 Circle
+1474 592 Circle
+1474 592 Circle
+2595 594 Circle
+2595 593 Circle
+2355 562 Circle
+2355 562 Circle
+1477 597 Circle
+1477 596 Circle
+5578 597 Circle
+5579 597 Circle
+3943 598 Circle
+3944 598 Circle
+5565 599 Circle
+5566 598 Circle
+5501 600 Circle
+5502 599 Circle
+373 601 Circle
+374 600 Circle
+4281 601 Circle
+4282 601 Circle
+4345 603 Circle
+4346 602 Circle
+5567 605 Circle
+5568 605 Circle
+2343 609 Circle
+2345 608 Circle
+2368 610 Circle
+2370 609 Circle
+2418 614 Circle
+2421 613 Circle
+2518 619 Circle
+2520 617 Circle
+2506 623 Circle
+2509 621 Circle
+4305 628 Circle
+4309 625 Circle
+738 630 Circle
+741 628 Circle
+6578 633 Circle
+6582 630 Circle
+4288 635 Circle
+4292 633 Circle
+2355 646 Circle
+2361 642 Circle
+2361 659 Circle
+2368 655 Circle
+2345 665 Circle
+2353 659 Circle
+2426 693 Circle
+2439 684 Circle
+4292 702 Circle
+4305 693 Circle
+741 712 Circle
+756 702 Circle
+5832 759 Circle
+5852 746 Circle
+2370 826 Circle
+2400 807 Circle
+2521 875 Circle
+2558 850 Circle
+6026 933 Circle
+6071 902 Circle
+5448 968 Circle
+5501 933 Circle
+4968 1091 Circle
+5031 1049 Circle
+5502 1134 Circle
+5565 1091 Circle
+665 1178 Circle
+730 1134 Circle
+2439 1222 Circle
+2505 1178 Circle
+4356 1270 Circle
+4428 1222 Circle
+3622 1318 Circle
+3694 1270 Circle
+5750 1423 Circle
+5831 1368 Circle
+6489 1537 Circle
+6576 1479 Circle
+5582 1741 Circle
+5690 1669 Circle
+3829 1817 Circle
+3943 1741 Circle
+3140 2002 Circle
+3293 1899 Circle
+6320 2216 Circle
+6482 2108 Circle
+1268 2675 Circle
+1447 2555 Circle
+4451 2812 Circle
+4656 2675 Circle
+6081 2973 Circle
+6320 2812 Circle
+5133 3966 Circle
+5356 3816 Circle
+5358 3816 Circle
+5448 3755 Circle
+6071 561 Circle
+6071 560 Circle
+% End plot #2
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Courier
+%%Pages: 1
